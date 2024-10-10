@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 
-def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, nama_font=None, posisi='center'):
+def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi='center',nama_font=None):
     """
      Menambahkan teks pada gambar sesuai koordinat yang diberikan pengguna
      
@@ -9,9 +9,9 @@ def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, nama_fo
          output_path (str): jalur gambar yang akan disimpan
          teks (str): Teks yang akan ditambahkan
          font_size: Ukuran font yang akan digunakan
-         warna_font: Warna font yang akan digunakan
-         nama_font (str): Nama font yang akan digunakan ('arial.ttf','ALGER.TTF',calibri.ttf','cambriab.ttf','times.ttf')
-         posisi (str): Posisi penempatan teks pada gambar ('center','top-left','top-right','botttom-left','bottom-right')"""
+         warna_font (str): Warna font yang akan digunakan
+         posisi (str): Posisi penempatan teks pada gambar ('center','top-left','top-right','botttom-left','bottom-right')
+         nama_font (str): Nama font yang akan digunakan ('arial.ttf','ALGER.TTF',calibri.ttf','cambriab.ttf','times.ttf')"""
     
     # Membuka file gambar
     gambar = Image.open(input_path)
