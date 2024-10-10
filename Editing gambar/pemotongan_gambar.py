@@ -35,11 +35,10 @@ def ukuran_gambar(Input_path,Output_path,left,top,right,bottom):
     except Exception as e:
         return f"Terjadi kesalahan: {e}"
 
-help(ukuran_gambar)
-ukuran_gambar(
-              "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-              "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-              0,0,2000,2000 # parameter untuk batasan pemotongan gambar
-)
+# ukuran_gambar(
+#               "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+#               "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+#               0,0,2000,2000 # parameter untuk batasan pemotongan gambar
+# )
 
 
