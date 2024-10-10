@@ -1,4 +1,4 @@
-from .convert_to_grayscale import convert_image_to_grayscale
+from .convert_to_grayscale import convert_to_grayscale
 from .rotate_image import rotate_image
 from .Brightness import adjust_brightness
 from .penambahanTeks import tambahkan_teks
