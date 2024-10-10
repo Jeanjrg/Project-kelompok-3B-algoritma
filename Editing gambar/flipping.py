@@ -1,13 +1,14 @@
 from PIL import Image, ImageOps
 
 def flip_image(image_path,output_path,direction):
+    """Memantulkan gambar baik secara horizontal atau vertikal.
+    
+    Args:
+        image_path (str): Jalur gambar dari folder.
+        output_path (str): Jalur gambar yang akan disimpan.
+        direction (str): pencerminan yang diinginkan (antara horizontal atau vertikal).
     """
-    Memantulkan gambar baik secara horizontal atau vertikal.
-
-    :param image_path: Path ke file gambar yang ingin dipantulkan.
-    :param output_path: Path untuk menyimpan gambar yang dipantulkan.
-    :param direction: Arah pemantulan ('horizontal' atau 'vertical').
-    """
+    
     try:
         # Buka gambar
         image = Image.open(image_path)
@@ -27,8 +28,8 @@ def flip_image(image_path,output_path,direction):
     except Exception as e:
         return f"Terjadi kesalahan: {e}"
     
-flip_image(
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
-    "Horizontal" 
-)
+# flip_image(
+#     "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+#     "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+#     "Horizontal" 
+# )
