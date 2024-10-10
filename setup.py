@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Editing gambar',
+    name='Editing_gambar',
     version='0.1.0',
     author='kelompok 3',
-    author_email='email@jeanjrg.com',
+    author_email='email@jeanbumbungan.com',
     description='Paket Python untuk pengolahan gambar',
     long_description=open('README.md').read(),  # Membaca isi README.md untuk deskripsi yang lebih panjang
     long_description_content_type='text/markdown',  # Tipe konten README
