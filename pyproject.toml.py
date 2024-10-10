@@ -3,7 +3,7 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Editing_gambar"  # Nama proyek sebaiknya tidak mengandung spasi
+name = "Editing gambar"  # Nama proyek sebaiknya tidak mengandung spasi
 version = "0.1.0"
 description = "Paket Python untuk pengolahan gambar"
 authors = ["jean <email@jeanbumbungan.com>"]
