@@ -1,29 +1,41 @@
 from PIL import Image     
 
 def ukuran_gambar(Input_path,Output_path,left,top,right,bottom):
-    """Fungsi untuk memotong gambar sesuai dengan koordinat yang ditentukan oleh pengguna.
+    """
+    Memotong gambar sesuai dengan koordinat yang ditentukan oleh pengguna dan menyimpannya.
 
-    Fungsi ini menerima jalur gambar input, jalur gambar output, dan koordinat
-    batas potongan (kiri, atas, kanan, bawah) untuk memotong gambar dalam bentuk persegi panjang.
+    Fungsi ini menerima jalur gambar input, jalur gambar output, dan koordinat batas 
+    pemotongan (kiri, atas, kanan, bawah) untuk memotong gambar dalam bentuk persegi panjang.
 
     Parameters:
-    Input_path (str): Jalur lengkap file gambar yang ingin dipotong. Pastikan format jalur sudah benar.
-                      Contoh: r'C:\\Users\\nama\\Pictures\\image.png'
-    Output_path (str): Jalur lengkap tempat menyimpan gambar hasil potongan. Pastikan format jalur sudah benar.
-                       Contoh: r'C:\\Users\\nama\\Pictures\\image_cropped.png'
-    left (int): Koordinat batas kiri gambar yang ingin dipotong (nilai piksel).
-    top (int): Koordinat batas atas gambar yang ingin dipotong (nilai piksel).
-    right (int): Koordinat batas kanan gambar yang ingin dipotong (nilai piksel).
-    bottom (int): Koordinat batas bawah gambar yang ingin dipotong (nilai piksel).
+    -----------
+    Input_path : str
+        Jalur lengkap file gambar yang ingin dipotong.
+        Contoh: r'C:\\Users\\nama\\Pictures\\image.png'
+    Output_path : str
+        Jalur lengkap tempat menyimpan gambar hasil potongan.
+        Contoh: r'C:\\Users\\nama\\Pictures\\image_cropped.png'
+    left : int
+        Koordinat batas kiri gambar yang ingin dipotong (dalam piksel).
+    top : int
+        Koordinat batas atas gambar yang ingin dipotong (dalam piksel).
+    right : int
+        Koordinat batas kanan gambar yang ingin dipotong (dalam piksel).
+    bottom : int
+        Koordinat batas bawah gambar yang ingin dipotong (dalam piksel).
 
     Returns:
-    str: Pesan sukses atau pesan kesalahan jika terjadi masalah.
+    --------
+    str
+        Pesan sukses yang menunjukkan gambar berhasil dipotong dan disimpan,
+        atau pesan kesalahan jika terjadi masalah selama proses.
 
-    Contoh penggunaan:
+    Example:
+    --------
     ukuran_gambar(
-        r'C:\\Users\\nama\\Pictures\\image.png',    # Jalur gambar input
-        r'C:\\Users\\nama\\Pictures\\image_cropped.png',  # Jalur gambar output
-        0, 0, 2000, 2000  # Koordinat kiri, atas, kanan, bawah
+        r'C:\\Users\\nama\\Pictures\\image.png',              # Jalur gambar input
+        r'C:\\Users\\nama\\Pictures\\image_cropped.png',       # Jalur gambar output
+        0, 0, 2000, 2000                                      # Koordinat kiri, atas, kanan, bawah
     )
     """
     try:
