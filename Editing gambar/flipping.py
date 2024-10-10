@@ -1,6 +1,6 @@
 from PIL import Image, ImageOps
 
-def flip_image(image_path,output_path,direction):
+def flip_image(image_path,output_path,direction="horizontal"):
     """Memantulkan gambar baik secara horizontal atau vertikal.
     
     Args:
