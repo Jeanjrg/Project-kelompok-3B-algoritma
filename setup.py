@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Editing_gambar',
+    name='Editing gambar',
     version='0.1.0',
     author='kelompok 3',
     author_email='email@jeanjrg.com',
