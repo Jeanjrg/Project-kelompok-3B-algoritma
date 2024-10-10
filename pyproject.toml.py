@@ -18,4 +18,4 @@ numpy = "^1.21"
 Pillow = "^8.0"
 
 [tool.setuptools.packages.find]
-where = ["Editing_gambar"]  # Pastikan direktori ini ada di struktur paket Anda
+where = ["Editing gambar"]  # Pastikan direktori ini ada di struktur paket Anda
