@@ -1,3 +1,6 @@
+from fontTools.ttLib import TTFont
+font = TTFont('/path/to/font.ttf')
+
 from PIL import Image, ImageDraw, ImageFont
 
 def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, nama_font=None, posisi='center'):
