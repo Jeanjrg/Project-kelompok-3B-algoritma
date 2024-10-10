@@ -1,28 +1,13 @@
 from PIL import Image
 
 def convert_image_to_grayscale(input_path,output_path):
+    """Mengubah gambar menjadi hitam putih.
+    
+    Args:
+        input_path (str): Jalur gambar dari folder.
+        output_path (str): Jalur gambar yang akan disimpan.
     """
-    Mengonversi gambar berwarna menjadi gambar grayscale dan menyimpannya.
-
-    Fungsi ini menerima jalur file gambar berwarna sebagai input, mengonversinya
-    menjadi gambar grayscale, dan menyimpan gambar hasil di jalur yang ditentukan.
-
-    Parameter:
-    -----------
-    input_path : str
-        Jalur file gambar input yang akan diubah menjadi grayscale.
-    output_path : str
-        Jalur file tempat gambar grayscale akan disimpan.
-
-    Catatan:
-    - Jika terjadi kesalahan saat membuka gambar, fungsi akan menampilkan pesan kesalahan.
-    - Setelah gambar berhasil diubah menjadi grayscale, gambar hasil akan disimpan dan ditampilkan.
-
-    Returns:
-    --------
-    Tidak ada nilai yang dikembalikan secara eksplisit, tetapi gambar hasil akan disimpan 
-    di jalur output yang ditentukan.
-    """
+    
     # Buka gambar
     try:
         image = Image.open(input_path)
