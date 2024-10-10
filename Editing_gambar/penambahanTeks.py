@@ -10,8 +10,7 @@ def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi=
          teks (str): Teks yang akan ditambahkan
          font_size: Ukuran font yang akan digunakan
          warna_font (str): Warna font yang akan digunakan
-         posisi (str): Posisi penempatan teks pada gambar ('center','top-left','top-right','botttom-left','bottom-right')
-         nama_font (str): Nama font yang akan digunakan ('arial.ttf','ALGER.TTF',calibri.ttf','cambriab.ttf','times.ttf')"""
+         posisi (str): Posisi penempatan teks pada gambar ('center','top-left','top-right','botttom-left','bottom-right')"""
     
     # Membuka file gambar
     gambar = Image.open(input_path)
