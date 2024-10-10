@@ -1,3 +1,10 @@
+from google.colab import files
+
+# Unggah file font .ttf dari komputer
+uploaded = files.upload()
+
+# Setelah diunggah, gunakan path dari file yang diunggah
+font_path = "/content/arial.ttf"
 from PIL import Image, ImageDraw, ImageFont
 
 def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi='center',nama_font=None):
