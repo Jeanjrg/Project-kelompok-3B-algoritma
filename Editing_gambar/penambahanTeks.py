@@ -1,12 +1,3 @@
-import subprocess
-import sys
-
-# Cek apakah matplotlib sudah diinstal, jika tidak maka install
-try:
-    import matplotlib
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
-
 from PIL import Image, ImageDraw, ImageFont
 
 def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, nama_font=None, posisi='center'):
