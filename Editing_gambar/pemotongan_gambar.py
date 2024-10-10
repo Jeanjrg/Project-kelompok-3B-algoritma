@@ -1,7 +1,7 @@
 from PIL import Image     
 
 def ukuran_gambar(Input_path,Output_path,left,top,right,bottom):
-     """Memotong gambar sesuai dengan koordinat yang ditentukan oleh pengguna dan menyimpannya.
+    """Memotong gambar sesuai dengan koordinat yang ditentukan oleh pengguna dan menyimpannya.
     
     Args:
         Input_path (str): Jalur gambar dari folder.
