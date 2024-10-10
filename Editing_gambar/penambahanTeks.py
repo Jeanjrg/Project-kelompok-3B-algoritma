@@ -1,13 +1,6 @@
-from google.colab import files
-
-# Unggah file font .ttf dari komputer
-uploaded = files.upload()
-
-# Setelah diunggah, gunakan path dari file yang diunggah
-font_path = "/content/arial.ttf"
 from PIL import Image, ImageDraw, ImageFont
 
-def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi='center',nama_font=None):
+def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi='center'):
     """
      Menambahkan teks pada gambar sesuai koordinat yang diberikan pengguna
      
@@ -26,11 +19,7 @@ def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi=
     draw = ImageDraw.Draw(gambar)
 
     # Mengolah font
-    if nama_font is None:
-        font = ImageFont.load_default(font_size)  # Menggunakan font default
-    else:
-        font = ImageFont.truetype(nama_font, font_size)  # Gunakan font yang diberikan
-
+    font = ImageFont.load_default(font_size)  # Menggunakan font default
     # Menghitung ukuran teks
     # textbbox mengembalikan (x0, y0, x1, y1) yang merupakan kotak pembatas teks
     text_bbox = draw.textbbox((0, 0), teks, font=font) 
