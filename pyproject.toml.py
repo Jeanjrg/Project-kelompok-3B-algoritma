@@ -3,13 +3,11 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my_package"
+name = "Editing_gambar"  # Nama proyek sebaiknya tidak mengandung spasi
 version = "0.1.0"
 description = "Paket Python untuk pengolahan gambar"
-authors = [
-    { name = "Nama Anda", email = "email@anda.com" }
-]
-license = { text = "MIT" }
+authors = ["Mirna <email@mirnhafebriasari.com>"]
+license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/Jeanjrg/Project-kelompok-3B-algoritma"
 repository = "https://github.com/Jeanjrg/Project-kelompok-3B-algoritma"
@@ -20,4 +18,4 @@ numpy = "^1.21"
 Pillow = "^8.0"
 
 [tool.setuptools.packages.find]
-where = ["my_package"]  # Pastikan 'my_package' adalah nama direktori yang sesuai
+where = ["Editing_gambar"]  # Pastikan direktori ini ada di struktur paket Anda
