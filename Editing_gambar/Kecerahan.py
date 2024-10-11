@@ -1,7 +1,7 @@
 from PIL import Image, ImageEnhance
 import os
 
-def kecerahan(image_path, output_path, level):
+def Kecerahan(image_path, output_path, level):
     """Mengubah kecerahan gambar berdasarkan level yang ditentukan.
     
     Args:
