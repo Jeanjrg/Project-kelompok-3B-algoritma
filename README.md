@@ -1,9 +1,12 @@
 "# Project-kelompok-3B-algoritma" 
 pip install .
+# cara pakai menggunakan link github di Google collab (!pip install git+ your URL)
+# cara pakai menggunakan link pypi di google collab (pip install Project-kelompok-3B-algoritma
+, import Editing_gambar *)
 
 Library editing gambar merujuk pada fitur dalam platform seperti WordPress yang memungkinkan pengguna untuk mengupload dan menyimpan file gambar. Di dalam library ini, pengguna dapat melakukan beberapa manipulasi dasar pada gambar yang diunggah, seperti pemotongan dan penyesuaian sederhana.
 
-# Brightness feature
+# fitur kecerahan
 Brightness feature adalah paket Python yang digunakan untuk menyesuaikan kecerahan gambar. Paket ini memudahkan pengguna dalam mengubah kecerahan gambar sesuai kebutuhan.
 
 ## Fitur
@@ -17,7 +20,7 @@ Brightness feature adalah paket Python yang digunakan untuk menyesuaikan kecerah
 
 
 
-## convert_to_grayscale
+## fitur hitam putih
 Digunakan untuk mengubah gambar berwarna menjadi gambar grayscale (hitam-putih). 
 
 ## Fitur
@@ -28,7 +31,7 @@ Digunakan untuk mengubah gambar berwarna menjadi gambar grayscale (hitam-putih).
 - input_image_path (str): Jalur gambar dari folder.
 - output_image_path (str): Jalur gambar yang akan disimpan.
 
-## flipping
+## fitur pencerminan
 Digunakan untuk membalik (flip) gambar secara horizontal atau vertikal. 
 
 ## Fitur
@@ -47,7 +50,7 @@ Digunakan untuk membalik (flip) gambar secara horizontal atau vertikal.
             -'horizontal': untuk membalik gambar secara horizontal
             -'vertikal': untuk membalik gambar secara vertikal.
 
-## pemotongan_gambar
+## fitur pemotongan gambar
 Digunakan untuk memotong (crop) gambar. 
 
 ## Fitur
@@ -61,7 +64,7 @@ Digunakan untuk memotong (crop) gambar.
 - right,bottom: koordinat parameter pemotongan gambar bagian kanan bawah"""
 
 
-## penambahanTeks
+## fitur penambahan teks
 Digunakan untuk menambahkan teks ke dalam gambar. 
 
 ## Fitur
@@ -76,7 +79,7 @@ Digunakan untuk menambahkan teks ke dalam gambar.
         warna_font: Warna font yang akan digunakan
         posisi: Posisi teks yang akan ditambahkan"""
 
-## rotate_image.py
+## fitur rotasi gambar
 Digunakan untuk memutar gambar pada sudut tertentu. 
 
 ## Fitur
