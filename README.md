@@ -16,7 +16,7 @@ Brightness feature adalah paket Python yang digunakan untuk menyesuaikan kecerah
 ## cara penggunaan
 - image_path (str): Jalur gambar dari folder.
 - output_path (str): Jalur gambar yang akan disimpan.
-- level (str): Tingkat kecerah)."""
+- level (float): Tingkat kecerahan yang diinginkan (angka antara 0.0 dan 2.0)
 
 
 
