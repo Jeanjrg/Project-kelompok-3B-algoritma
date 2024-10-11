@@ -74,7 +74,6 @@ Digunakan untuk menambahkan teks ke dalam gambar.
         teks (str): Teks yang akan ditambahkan
         left: Koordinat penempatan teks dari kiri
         top: Koordinat penampatan teks dari atas
-        nama_font (str): Nama font yang akan digunakan
         font_size: Ukuran font yang akan digunakan
         warna_font: Warna font yang akan digunakan"""
 
