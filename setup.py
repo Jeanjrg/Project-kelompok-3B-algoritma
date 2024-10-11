@@ -1,12 +1,15 @@
 from setuptools import setup, find_packages
 
+
+with open('README.md',) as f:
+    deskripsi=f.read()
 setup(
     name='Editing_gambar',
-    version='0.1.0',
+    version='0.2.0',
     author='kelompok 3',
     author_email='email@jeanbumbungan.com',
     description='Paket Python untuk pengolahan gambar',
-    long_description=open('README.md').read(),  # Membaca isi README.md untuk deskripsi yang lebih panjang
+    long_description=deskripsi,  # Membaca isi README.md untuk deskripsi yang lebih panjang
     long_description_content_type='text/markdown',  # Tipe konten README
     url='https://github.com/Jeanjrg/Project-kelompok-3B-algoritma',
     license='MIT',
