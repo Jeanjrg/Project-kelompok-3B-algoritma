@@ -16,7 +16,7 @@ def rotate_image(input_path,output_path,angle):
         # Menyimpan gambar hasil rotasi
         rotated_image.save(output_path)
         # Menunjukkan gambar yang telah di rotasi
-        rotated_image.show(output_path)
+        rotated_image.show()
         return f"Gambar berhasil disimpan di: {output_path}"
     except Exception as e:
         return f"Terjadi kesalahan: {e}"
