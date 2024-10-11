@@ -72,10 +72,9 @@ Digunakan untuk menambahkan teks ke dalam gambar.
         input_path (str): Jalur gambar dari folder
         output_path (str): jalur gambar yang akan disimpan
         teks (str): Teks yang akan ditambahkan
-        left: Koordinat penempatan teks dari kiri
-        top: Koordinat penampatan teks dari atas
         font_size: Ukuran font yang akan digunakan
-        warna_font: Warna font yang akan digunakan"""
+        warna_font: Warna font yang akan digunakan
+        posisi: Posisi teks yang akan ditambahkan"""
 
 ## rotate_image.py
 Digunakan untuk memutar gambar pada sudut tertentu. 
