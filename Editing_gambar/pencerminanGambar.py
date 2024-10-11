@@ -23,7 +23,6 @@ def pencerminanGambar(image_path,output_path,direction="horizontal"):
 
         # Simpan gambar yang dipantulkan
         flipped_image.save(output_path)
-        return f"Gambar berhasil dipantulkan dan disimpan di: {output_path}"
         flipped_image.show()
     except Exception as e:
         return f"Terjadi kesalahan: {e}"
