@@ -12,7 +12,6 @@ setup(
     license='MIT',
     packages=find_packages(),  # Menemukan semua paket yang ada
     install_requires=[
-        'numpy>=1.21',  # Versi minimal numpy
         'Pillow>=8.0',   # Versi minimal Pillow
     ],
     classifiers=[
