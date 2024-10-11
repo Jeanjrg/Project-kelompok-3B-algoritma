@@ -1,62 +1,37 @@
 from PIL import Image, ImageDraw, ImageFont
 
-def tambahkan_teks(input_path, output_path, teks, font_size, warna_font, posisi='center'):
-    """
-     Menambahkan teks pada gambar sesuai koordinat yang diberikan pengguna
-     
-     Args:
-         input_path (str): Jalur gambar dari folder
-         output_path (str): jalur gambar yang akan disimpan
-         teks (str): Teks yang akan ditambahkan
-         font_size: Ukuran font yang akan digunakan
-         warna_font (str): Warna font yang akan digunakan
-         posisi (str): Posisi penempatan teks pada gambar ('center','top-left','top-right','botttom-left','bottom-right')"""
+def penambahanTeks(input_path,output_path,teks,left,top,nama_font,font_size,warna_font):
+    """Menambahkan teks ke gambar pada koordinat yang ditentukan dan menyimpannya.
     
+    Args:
+        Input_path (str): Jalur file gambar input.
+        output_path (str): Jalur file untuk menyimpan gambar dengan teks yang ditambahkan.
+        teks (str): Teks yang akan ditambahkan pada gambar.
+        left (int): Posisi horizontal (kiri) teks dalam piksel.
+        top (int): Posisi vertikal (atas) teks dalam piksel.
+        nama_font (str): Nama file font (TrueType) yang akan digunakan untuk teks.
+        font_size (int): Ukuran font teks.
+        warna_font (str): Warna teks yang akan ditambahkan dalam format heksadesimal atau nama warna yang didukung.
+    """
     # Membuka file gambar
-    gambar = Image.open(input_path)
+    input_path = Image.open(input_path)
+    # Menentukan posisi teks
+    posisi = (left, top)
     # Mengolah gambar
-    draw = ImageDraw.Draw(gambar)
-
-    # Mengolah font
-    font = ImageFont.load_default(font_size)  # Menggunakan font default
-    # Menghitung ukuran teks
-    # textbbox mengembalikan (x0, y0, x1, y1) yang merupakan kotak pembatas teks
-    text_bbox = draw.textbbox((0, 0), teks, font=font) 
-    teks_width = text_bbox[2] - text_bbox[0]
-    teks_height = text_bbox[3] - text_bbox[1]
-
-    # Menentukan posisi berdasarkan opsi
-    if posisi == 'center':
-        left = (gambar.width - teks_width) / 2
-        top = (gambar.height - teks_height) / 2
-    elif posisi == 'top-left':
-        left = 10
-        top = 10
-    elif posisi == 'top-right':
-        left = gambar.width - teks_width - 10
-        top = 10
-    elif posisi == 'bottom-left':
-        left = 10
-        top = gambar.height - teks_height - 10
-    elif posisi == 'bottom-right':
-        left = gambar.width - teks_width - 10
-        top = gambar.height - teks_height - 10
-    else:
-        raise ValueError("Posisi tidak dikenal. Gunakan 'center', 'top-left', 'top-right', 'bottom-left', atau 'bottom-right'.")
-
-    # Menempatkan teks
-    draw.text((left, top), teks, fill=warna_font, font=font)
-    gambar.save(output_path)  # Menyimpan hasil di output
-    gambar.show()  # Menunjukkan hasil gambar yang telah ditambahkan teks
-
-# help(tambahkan_teks)
+    gambar = ImageDraw.Draw(input_path)
+    # Mengolah nama font dan ukuran teks
+    font = ImageFont.truetype(nama_font, font_size)
+    # Menempatkan posisi dan warna teks
+    gambar.text(posisi, teks, fill=warna_font, font=font)
+    input_path.save(output_path) # Menyimpan hasil di output
+    input_path.show(output_path) # Menunjukkan hasil gambar yang telah ditambahkan teks
 
 # tambahkan_teks(
-#     input_path="C:\\Users\\aisyah salsabila\Downloads\Jay Wallpaper.jpeg",
-#     output_path="C:\\Users\\aisyah salsabila\Downloads\Jaii Wallpaper.jpeg",
-#     teks="Halo Dunia",
-#     font_size=100,
-#     warna_font='red',
-#     nama_font=None,
-#     posisi='bottom-right'
+#     "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+#     "C:\\Users\jpael\OneDrive\Pictures\Ignition Teaser14.png", # Buat backslash (\) menjadi double backslash (\\) agar path gambar dapat terbaca
+#     "Jean Patra Paeloran", #Tambahkan teks string
+#     3000,1500, # Masukkan koordinat teks
+#     "times.ttf", # font yang tersedia: "arial.ttf", "ALGER.TTF", "calibri.ttf", "cambriab.ttf", "times.ttf"
+#     500, # Masukkan ukuran font
+#     "red" # Masukkan warna font dalam bahasa inggris
 # )

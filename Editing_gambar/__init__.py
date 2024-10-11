@@ -1,9 +1,9 @@
-from .convert_to_grayscale import convert_image_to_grayscale
-from .rotate_image import rotate_image
-from .Brightness import adjust_brightness
-from .penambahanTeks import tambahkan_teks
-from .flipping import flip_image
-from .pemotongan_gambar import ukuran_gambar
+from .hitam_putih import hitam_putih
+from .rotasiGambar import RotasiGambar
+from .Kecerahan import kecerahan
+from .penambahanTeks import penambahanTeks
+from .pencerminanGambar import pencerminanGambar
+from .pemotonganGambar import PemotonganGambar
 
 __all__ = [
     'convert_image_to_grayscale',
