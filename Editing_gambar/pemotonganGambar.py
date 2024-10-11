@@ -1,6 +1,6 @@
 from PIL import Image     
 
-def PemotonganGambar(Input_path,Output_path,left,top,right,bottom):
+def pemotonganGambar(Input_path,Output_path,left,top,right,bottom):
     """Memotong gambar sesuai dengan koordinat yang ditentukan oleh pengguna dan menyimpannya.
     
     Args:

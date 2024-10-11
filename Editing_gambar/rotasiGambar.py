@@ -1,6 +1,6 @@
 from PIL import Image
 
-def RotasiGambar(input_path,output_path,angle):
+def rotasiGambar(input_path,output_path,angle):
     """Melakukan rotasi gambar berdasarkan sudut yang ditentukan dan menyimpannya.
     
     Args:
