@@ -1,6 +1,6 @@
 "# Project-kelompok-3B-algoritma" 
 pip install .
-# cara pakai menggunakan link github di Google collab (!pip install git+ your URL)
+# cara pakai menggunakan link github di Google collab (!pip install git+https://github.com/Jeanjrg/Project-kelompok-3B-algoritma.git)
 # cara pakai menggunakan link pypi di google collab (pip install Project-kelompok-3B-algoritma
 , import Editing_gambar *)
 
@@ -16,7 +16,7 @@ Brightness feature adalah paket Python yang digunakan untuk menyesuaikan kecerah
 ## cara penggunaan
 - image_path (str): Jalur gambar dari folder.
 - output_path (str): Jalur gambar yang akan disimpan.
-- level (str): Tingkat kecerahan yang diinginkan ('sangat gelap', 'gelap', 'normal', 'cerah', 'sangat cerah')."""
+- level (str): Tingkat kecerah)."""
 
 
 
