@@ -1,7 +1,7 @@
 # Project-kelompok-3B-algoritma
 pip install .
-# cara pakai menggunakan link github di Google collab (!pip install git+https://github.com/Jeanjrg/Project-kelompok-3B-algoritma.git)
-# cara pakai menggunakan link pypi di google collab (pip install Project-kelompok-3B-algoritma)
+# cara menggunakan link github di Google collab (!pip install git+https://github.com/Jeanjrg/Project-kelompok-3B-algoritma.git)
+# cara menggunakan link pypi di google collab (pip install Editing-gambar)
 # (import Editing_gambar *)
 
 Library editing gambar merujuk pada fitur dalam platform seperti WordPress yang memungkinkan pengguna untuk mengupload dan menyimpan file gambar. Di dalam library ini, pengguna dapat melakukan beberapa manipulasi dasar pada gambar yang diunggah, seperti pemotongan dan penyesuaian sederhana.
